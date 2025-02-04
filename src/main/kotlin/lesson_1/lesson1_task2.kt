@@ -18,7 +18,7 @@ fun main() {
     (порядок объявления, отступы и так далее).
     */
 
-    var orderCount: UInt = 75u
+    val orderCount: UInt = 75u
     val purchaseThankYouText: String = "Спасибо за вашу покупку! Мы рады, что вы выбрали нас. \nЖдем Вас снова!"
 
     println(orderCount)
