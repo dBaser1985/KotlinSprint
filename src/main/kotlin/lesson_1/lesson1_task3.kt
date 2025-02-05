@@ -23,8 +23,8 @@ fun main() {
      */
 
     val year: Short = 1961
-    var hour: String = "09"
-    var minute: String = "07"
+    var hour = "09"
+    var minute = "07"
 
     println(year)
     println(hour)
@@ -33,10 +33,7 @@ fun main() {
     hour = "10"
     minute = "55"
 
-    // БЫЛО:
-    //println("${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}")
-    //СТАЛО:
-    println("$hour:$minute")
+   println("$hour:$minute")
 
     /* //Можно так:
     print(hour)
