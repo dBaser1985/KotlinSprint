@@ -35,10 +35,4 @@ fun main() {
 
    println("$hour:$minute")
 
-    /* //Можно так:
-    print(hour)
-    print(":")
-    print(minute)
-     */
-
 }
