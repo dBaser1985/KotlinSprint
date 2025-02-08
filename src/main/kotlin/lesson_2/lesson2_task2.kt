@@ -1,35 +1,25 @@
 package org.example.lesson_2
 
 fun main() {
-    /*
-    Задача 2 к Уроку 2
 
-В компании работало 50 человек с зарплатой по 30000 рублей. Затем в компанию устроилось 30 стажеров, которым
-назначили зарплату в 20000 рублей каждому. Пишем часть гипотетического софта для бухгалтерии, который будет считать:
+    val salaryPermanentEmployees = 30000
+    val salaryInterns = 20000
 
-– Расходы на выплату зарплаты постоянных сотрудников;
-– Общие расходы по ЗП после прихода стажеров;
-– Среднюю ЗП одного сотрудника после устройства стажеров.
+    val countPermanentEmployees = 50
+    val countInterns = 30
 
-Каждый пункт посчитать и сохранить в переменную с соответствующим названием. Все значения необходимо
-вывести в виде целых чисел.
-     */
+    // Расходы на выплату зарплаты постоянных сотрудников
+    val expensesPermanentEmployees = salaryPermanentEmployees * countPermanentEmployees
+    val expensesInterns = salaryInterns * countInterns
 
-    val okladAll = 30000
-    val okladJun = 20000
+    // Общие расходы по ЗП после прихода стажеров
+    val expensesTotal = expensesPermanentEmployees + expensesInterns
 
-    val countAll = 50
-    val countJun = 30
+    // Среднюю ЗП одного сотрудника после устройства стажеров
+    val averageSalary = expensesTotal / (countPermanentEmployees + countInterns)
 
-    val allFOT = okladAll*countAll
-    val junFOT = okladJun*countJun
-    val totalFOT = allFOT+junFOT
-
-    val avgOklad = totalFOT/(countAll+countJun)
-
-
-    println("Фонд оплаты труда постоянных сотрудников: $allFOT")
-    println("Общие расходы по ЗП: $totalFOT")
-    println("Средняя ЗП сотрудников: $avgOklad")
+    println("Фонд оплаты труда постоянных сотрудников: $expensesPermanentEmployees")
+    println("Общие расходы по ЗП: $expensesTotal")
+    println("Средняя ЗП сотрудников: $averageSalary")
 
 }
