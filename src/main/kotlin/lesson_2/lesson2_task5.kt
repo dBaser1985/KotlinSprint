@@ -13,4 +13,5 @@ fun main() {
     val finalAmountOfDeposit = initialAmount * (ONE_HUNDRED_PERCENT_IN_DECIMAL + percentageRrate).pow(numberOfYears)
 
     println("Размер вклада через 20 лет: %.3f".format(finalAmountOfDeposit))
+
 }
