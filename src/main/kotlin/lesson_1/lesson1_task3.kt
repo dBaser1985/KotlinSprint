@@ -23,19 +23,16 @@ fun main() {
      */
 
     val year: Short = 1961
-    var hour: Short = 9
-    var minute: Short = 7
+    var hour = "09"
+    var minute = "07"
 
     println(year)
-    println(hour.toString())
+    println(hour)
     println(minute)
 
-    hour = 10
-    minute = 55
-    // Форматируем вывод в нужном виде
-    println("${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}")
-    //Можно использовать print() для вывода без переноса строки, но в данном случае использую шаблонный вывод
+    hour = "10"
+    minute = "55"
 
-    //Вопрос: как ограничить диапазон доступных для ввода значений, что б количество часов было между 00 и 23
+   println("$hour:$minute")
 
 }
