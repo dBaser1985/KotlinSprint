@@ -4,9 +4,9 @@ const val MINUTES_IN_HOUR = 60
 
 fun main() {
 
-    val departureHour = 9  // Час выезда
-    val departureMinute = 39  // Минуты выезда
-    val travelTimeInMinutes = 457  // Время в пути в минутах
+    val departureHour = 9
+    val departureMinute = 39
+    val travelTimeInMinutes = 457
 
     val departureTimeInMinutes = departureHour * MINUTES_IN_HOUR + departureMinute
     val arrivalTimeInMinutes = departureTimeInMinutes + travelTimeInMinutes
